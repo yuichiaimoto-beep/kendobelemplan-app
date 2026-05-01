@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plano de Treino</title>
+  <style>
+    :root {
+      --bg: #f4efe5;
+      --panel: #fffaf2;
+      --ink: #20303c;
+      --muted: #6b7780;
+      --accent: #bf5b04;
+      --accent-dark: #7f3b00;
+      --line: #e5d7c2;
+      --header: #243746;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(191, 91, 4, 0.16), transparent 28%),
+        linear-gradient(180deg, #f8f3ea 0%, var(--bg) 100%);
+    }
+
+    .page {
+      width: min(960px, calc(100% - 32px));
+      margin: 32px auto;
+      padding: 28px;
+      background: rgba(255, 250, 242, 0.92);
+      border: 1px solid rgba(229, 215, 194, 0.9);
+      border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(36, 55, 70, 0.12);
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2.1rem, 5vw, 3.4rem);
+      line-height: 1.05;
+      color: var(--header);
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: white;
+      margin-top: 20px;
+    }
+
+    .section-title {
+      margin: 28px 0 12px;
+      font-size: 1.25rem;
+      color: var(--header);
+    }
+
+    .notice-box {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: white;
+      padding: 18px 20px;
+    }
+
+    .notice-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .notice-list li + li {
+      margin-top: 10px;
+    }
+
+    .notice-empty {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead th {
+      padding: 16px;
+      background: var(--header);
+      color: white;
+      text-align: left;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+    }
+
+    tbody td {
+      padding: 15px 16px;
+      border-top: 1px solid #eef0f2;
+      vertical-align: top;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #fcfaf6;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: #fff1e5;
+      color: var(--accent-dark);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 20px, 960px);
+        margin: 10px auto;
+        padding: 18px;
+        border-radius: 18px;
+      }
+
+      thead th,
+      tbody td {
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <h1 id="title">Plano de treino</h1>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Dia da semana</th>
+            <th>Hora</th>
+            <th>Local</th>
+          </tr>
+        </thead>
+        <tbody id="schedule-body">
+          <tr>
+            <td colspan="4">Carregando agenda...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="section-title">Avisos</h2>
+    <section class="notice-box" aria-label="Avisos">
+      <div id="notice-body">
+        <p class="notice-empty">Nenhum aviso no momento.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    const fallbackPayload = {
+      schedule: [
+        { Data: "02/05", Hora: "13:00 - 16:00", Local: "Escola CEKO" },
+        { Data: "06/05", Hora: "19:30 - 21:30", Local: "Escola Clara Pinto" },
+        { Data: "08/05", Hora: "18:00 - 20:00", Local: "Escola Clara Pinto" },
+        { Data: "13/05", Hora: "19:30 - 21:30", Local: "Escola Clara Pinto" },
+        { Data: "15/05", Hora: "18:00 - 20:00", Local: "Escola Clara Pinto" },
+        { Data: "20/05", Hora: "19:30 - 21:30", Local: "Escola Clara Pinto" },
+        { Data: "22/05", Hora: "18:00 - 20:00", Local: "Escola Clara Pinto" },
+        { Data: "23/05", Hora: "13:00 - 16:00", Local: "Escola CEKO" },
+        { Data: "27/05", Hora: "19:30 - 21:30", Local: "Escola Clara Pinto" },
+        { Data: "29/05", Hora: "18:00 - 20:00", Local: "Escola Clara Pinto" },
+        { Data: "30/05", Hora: "13:00 - 16:00", Local: "Escola CEKO" }
+      ],
+      avisos: [
+        "Nos dias 9 e 16 de maio, haverá apresentação de kendo.",
+        "O grupo está convidado para dois eventos em maio. Haverá um evento cultural no dia 9, no Nippo, e uma festa no dia 16, em Cidade Nova."
+      ]
+    };
+
+    const monthNames = [
+      "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+      "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+    ];
+
+    const weekdayNames = [
+      "domingo", "segunda-feira", "terça-feira", "quarta-feira",
+      "quinta-feira", "sexta-feira", "sábado"
+    ];
+
+    function parseDayMonth(value) {
+      const parts = value.split("/").map(Number);
+      if (parts.length !== 2 || parts.some(Number.isNaN)) {
+        return null;
+      }
+
+      const [day, month] = parts;
+      return { day, month };
+    }
+
+    function getWeekdayLabel(dateText) {
+      const parsed = parseDayMonth(dateText);
+      if (!parsed) {
+        return "";
+      }
+
+      const year = new Date().getFullYear();
+      const date = new Date(year, parsed.month - 1, parsed.day);
+      return weekdayNames[date.getDay()] || "";
+    }
+
+    function getMonthLabel(items) {
+      if (!items.length) {
+        return "-";
+      }
+
+      const parsed = parseDayMonth(items[0].Data || "");
+      if (!parsed) {
+        return "-";
+      }
+
+      return monthNames[parsed.month - 1] || "-";
+    }
+
+    function renderSchedule(items) {
+      const body = document.getElementById("schedule-body");
+      const title = document.getElementById("title");
+      const monthLabel = getMonthLabel(items);
+      title.textContent = monthLabel === "-" ? "Plano de treino" : `Plano de treino de ${monthLabel}`;
+
+      if (!items.length) {
+        body.innerHTML = '<tr><td colspan="4">Nenhum treino encontrado.</td></tr>';
+        return;
+      }
+
+      body.innerHTML = items.map((session) => `
+        <tr>
+          <td>${session.Data || ""}</td>
+          <td>${session["Dia da semana"] || getWeekdayLabel(session.Data || "")}</td>
+          <td>${session.Hora || ""}</td>
+          <td>${session.Local || ""}</td>
+        </tr>
+      `).join("");
+    }
+
+    function renderAvisos(items) {
+      const noticeBody = document.getElementById("notice-body");
+
+      if (!items.length) {
+        noticeBody.innerHTML = '<p class="notice-empty">Nenhum aviso no momento.</p>';
+        return;
+      }
+
+      noticeBody.innerHTML = `
+        <ul class="notice-list">
+          ${items.map((item) => `<li>${item}</li>`).join("")}
+        </ul>
+      `;
+    }
+
+    function normalizePayload(payload) {
+      if (Array.isArray(payload)) {
+        return { schedule: payload, avisos: [] };
+      }
+
+      return {
+        schedule: Array.isArray(payload?.schedule) ? payload.schedule : [],
+        avisos: Array.isArray(payload?.avisos) ? payload.avisos : []
+      };
+    }
+
+    async function loadSchedule() {
+      try {
+        const response = await fetch(`./training_schedule.json?v=${Date.now()}`, { cache: "no-store" });
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+
+        const payload = normalizePayload(await response.json());
+        renderSchedule(payload.schedule);
+        renderAvisos(payload.avisos);
+      } catch (error) {
+        const payload = normalizePayload(fallbackPayload);
+        renderSchedule(payload.schedule);
+        renderAvisos(payload.avisos);
+      }
+    }
+
+    loadSchedule();
+  </script>
+</body>
+</html>
