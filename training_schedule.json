@@ -26,6 +26,11 @@
       "Local": "Escola Clara Pinto"
     },
     {
+      "Data": "16/05",
+      "Hora": "13:00 - 15:00",
+      "Local": "Escola Deodoro de Mendonça"
+    },
+    {
       "Data": "20/05",
       "Hora": "19:30 - 21:30",
       "Local": "Escola Clara Pinto"
@@ -38,7 +43,7 @@
     {
       "Data": "23/05",
       "Hora": "13:00 - 16:00",
-      "Local": "Escola CEKO"
+      "Local": "Escola Deodoro de Mendonça"
     },
     {
       "Data": "27/05",
@@ -57,7 +62,7 @@
     }
   ],
   "avisos": [
-    "Nos dias 9 e 16 de maio, haverá apresentação de kendo.",
-    "O grupo está convidado para dois eventos em maio. Haverá um evento cultural no dia 9, no Nippo, e uma festa no dia 16, em Cidade Nova."
+    "Nos dia 16 de maio, haverá apresentação de kendo na Cidade Nova.",
+    "Haverá treino na Escola Deodoro de Mendonça nos dias 16 e 23. Endereço: Av. Gov. José Malcher, 1622 - Nazaré,"
   ]
 }
