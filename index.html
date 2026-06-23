@@ -165,26 +165,6 @@
   </main>
 
   <script>
-    const fallbackPayload = {
-      schedule: [
-        { Data: "02/05", Hora: "13:00 - 16:00", Local: "Escola CEKO" },
-        { Data: "06/05", Hora: "19:30 - 21:30", Local: "Escola Clara Pinto" },
-        { Data: "08/05", Hora: "18:00 - 20:00", Local: "Escola Clara Pinto" },
-        { Data: "13/05", Hora: "19:30 - 21:30", Local: "Escola Clara Pinto" },
-        { Data: "15/05", Hora: "18:00 - 20:00", Local: "Escola Clara Pinto" },
-        { Data: "20/05", Hora: "19:30 - 21:30", Local: "Escola Clara Pinto" },
-        { Data: "22/05", Hora: "18:00 - 20:00", Local: "Escola Clara Pinto" },
-        { Data: "23/05", Hora: "13:00 - 16:00", Local: "Escola CEKO" },
-        { Data: "27/05", Hora: "19:30 - 21:30", Local: "Escola Clara Pinto" },
-        { Data: "29/05", Hora: "18:00 - 20:00", Local: "Escola Clara Pinto" },
-        { Data: "30/05", Hora: "13:00 - 16:00", Local: "Escola CEKO" }
-      ],
-      avisos: [
-        "Nos dias 9 e 16 de maio, haverá apresentação de kendo.",
-        "O grupo está convidado para dois eventos em maio. Haverá um evento cultural no dia 9, no Nippo, e uma festa no dia 16, em Cidade Nova."
-      ]
-    };
-
     const monthNames = [
       "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
       "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
@@ -265,6 +245,16 @@
       `;
     }
 
+    function renderLoadError(error) {
+      const body = document.getElementById("schedule-body");
+      const title = document.getElementById("title");
+      const noticeBody = document.getElementById("notice-body");
+
+      title.textContent = "Plano de treino";
+      body.innerHTML = `<tr><td colspan="4">Não foi possível carregar training_schedule.json: ${error.message}</td></tr>`;
+      noticeBody.innerHTML = '<p class="notice-empty">Verifique se o arquivo JSON publicado está válido.</p>';
+    }
+
     function normalizePayload(payload) {
       if (Array.isArray(payload)) {
         return { schedule: payload, avisos: [] };
@@ -287,9 +277,7 @@
         renderSchedule(payload.schedule);
         renderAvisos(payload.avisos);
       } catch (error) {
-        const payload = normalizePayload(fallbackPayload);
-        renderSchedule(payload.schedule);
-        renderAvisos(payload.avisos);
+        renderLoadError(error);
       }
     }
 
