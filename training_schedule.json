@@ -1,62 +1,75 @@
 {
   "schedule": [
     {
-      "Data": "03/06",
-      "Hora": "19:30 - 21:30",
-      "Local": "Escola Clara Pinto"
+      "Data": "01/07",
+      "Hora": "18:30 - 20:30",
+      "Local": "Escola Deodoro de Mendonça"
     },
     {
-      "Data": "05/06",
-      "Hora": "18:00 - 20:00",
-      "Local": "Escola Clara Pinto"
+      "Data": "03/07",
+      "Hora": "18:30 - 20:30",
+      "Local": "Escola Deodoro de Mendonça"
     },
     {
-      "Data": "06/06",
+      "Data": "04/07",
       "Hora": "13:00 - 16:00",
       "Local": "Escola Deodoro de Mendonça"
     },
     {
-      "Data": "10/06",
-      "Hora": "19:30 - 21:30",
-      "Local": "Escola Clara Pinto"
+      "Data": "08/07",
+      "Hora": "18:30 - 20:30",
+      "Local": "Escola Deodoro de Mendonça"
     },
     {
-      "Data": "12/06",
-      "Hora": "18:00 - 20:00",
-      "Local": "Escola Clara Pinto"
+      "Data": "10/07",
+      "Hora": "18:30 - 20:30",
+      "Local": "Escola Deodoro de Mendonça"
     },
     {
-      "Data": "13/06",
+      "Data": "11/07",
       "Hora": "13:00 - 16:00",
       "Local": "Escola Deodoro de Mendonça"
     },
     {
-      "Data": "17/06",
-      "Hora": "19:30 - 21:30",
-      "Local": "Escola Clara Pinto"
+      "Data": "15/07",
+      "Hora": "18:30 - 20:30",
+      "Local": "Escola Deodoro de Mendonça"
     },
     {
-      "Data": "19/06",
-      "Hora": "18:00 - 20:00",
-      "Local": "Escola Clara Pinto"
+      "Data": "17/07",
+      "Hora": "18:30 - 20:30",
+      "Local": "Escola Deodoro de Mendonça"
     },
     {
-      "Data": "20/06",
+      "Data": "18/07",
       "Hora": "13:00 - 16:00",
       "Local": "Escola Deodoro de Mendonça"
     },
     {
-      "Data": "26/06",
-      "Hora": "18:00 - 20:00",
-      "Local": "Escola Clara Pinto"
+      "Data": "22/07",
+      "Hora": "18:30 - 20:30",
+      "Local": "Escola Deodoro de Mendonça"
     },
     {
-      "Data": "27/06",
+      "Data": "24/07",
+      "Hora": "18:30 - 20:30",
+      "Local": "Escola Deodoro de Mendonça"
+    },
+    {
+      "Data": "25/07",
       "Hora": "13:00 - 16:00",
+      "Local": "Escola Deodoro de Mendonça"
+    },
+    {
+      "Data": "29/07",
+      "Hora": "18:30 - 20:30",
+      "Local": "Escola Deodoro de Mendonça"
+    },
+    {
+      "Data": "31/07",
+      "Hora": "18:30 - 20:30",
       "Local": "Escola Deodoro de Mendonça"
     }
   ],
-  "avisos": [
-    "O treino do dia 24 foi cancelado devido ao jogo da copa"
-  ]
+  "avisos": ["Neste mês, haverá treino às 18h30 na Escola Deodoro de Mendonça nas quartas e sextas."]
 }
