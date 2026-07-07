@@ -17,12 +17,12 @@
     },
     {
       "Data": "08/07",
-      "Hora": "18:30 - 20:30",
+      "Hora": "19:00 - 21:0",
       "Local": "Escola Deodoro de Mendonça"
     },
     {
       "Data": "10/07",
-      "Hora": "18:30 - 20:30",
+      "Hora": "19:0 - 21:00",
       "Local": "Escola Deodoro de Mendonça"
     },
     {
@@ -32,12 +32,12 @@
     },
     {
       "Data": "15/07",
-      "Hora": "18:30 - 20:30",
+      "Hora": "19:00 - 21:00",
       "Local": "Escola Deodoro de Mendonça"
     },
     {
       "Data": "17/07",
-      "Hora": "18:30 - 20:30",
+      "Hora": "19:00 - 21:00",
       "Local": "Escola Deodoro de Mendonça"
     },
     {
@@ -47,12 +47,12 @@
     },
     {
       "Data": "22/07",
-      "Hora": "18:30 - 20:30",
+      "Hora": "19:00 - 21:00",
       "Local": "Escola Deodoro de Mendonça"
     },
     {
       "Data": "24/07",
-      "Hora": "18:30 - 20:30",
+      "Hora": "19:00 - 21:00",
       "Local": "Escola Deodoro de Mendonça"
     },
     {
@@ -62,14 +62,14 @@
     },
     {
       "Data": "29/07",
-      "Hora": "18:30 - 20:30",
+      "Hora": "19:00 - 21:00",
       "Local": "Escola Deodoro de Mendonça"
     },
     {
       "Data": "31/07",
-      "Hora": "18:30 - 20:30",
+      "Hora": "19:00 - 21:0",
       "Local": "Escola Deodoro de Mendonça"
     }
   ],
-  "avisos": ["Neste mês, haverá treino às 18h30 na Escola Deodoro de Mendonça nas quartas e sextas."]
+  "avisos": ["Haverá apresentação no dia 12."]
 }
