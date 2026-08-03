@@ -1,75 +1,70 @@
 {
   "schedule": [
     {
-      "Data": "01/07",
-      "Hora": "18:30 - 20:30",
+      "Data": "01/08",
+      "Hora": "14:00 - 17:00",
       "Local": "Escola Deodoro de Mendonça"
     },
     {
-      "Data": "03/07",
-      "Hora": "18:30 - 20:30",
+      "Data": "05/08",
+      "Hora": "19:30 - 21:30",
+      "Local": "Escola Clara Pinto"
+    },
+    {
+      "Data": "07/08",
+      "Hora": "18:00 - 20:00",
+      "Local": "Escola Clara Pinto"
+    },
+    {
+      "Data": "08/08",
+      "Hora": "14:00 - 17:00",
       "Local": "Escola Deodoro de Mendonça"
     },
     {
-      "Data": "04/07",
-      "Hora": "13:00 - 16:00",
+      "Data": "12/08",
+      "Hora": "19:30 - 21:30",
+      "Local": "Escola Clara Pinto"
+    },
+    {
+      "Data": "14/08",
+      "Hora": "18:00 - 20:00",
+      "Local": "Escola Clara Pinto"
+    },
+    {
+      "Data": "15/08",
+      "Hora": "14:00 - 17:00",
       "Local": "Escola Deodoro de Mendonça"
     },
     {
-      "Data": "08/07",
-      "Hora": "19:00 - 21:00",
+      "Data": "19/08",
+      "Hora": "19:30 - 21:30",
+      "Local": "Escola Clara Pinto"
+    },
+    {
+      "Data": "21/08",
+      "Hora": "18:00 - 20:00",
+      "Local": "Escola Clara Pinto"
+    },
+    {
+      "Data": "22/08",
+      "Hora": "14:00 - 17:00",
       "Local": "Escola Deodoro de Mendonça"
     },
     {
-      "Data": "10/07",
-      "Hora": "19:00 - 21:00",
-      "Local": "Escola Deodoro de Mendonça"
+      "Data": "26/08",
+      "Hora": "19:30 - 21:30",
+      "Local": "Escola Clara Pinto"
     },
     {
-      "Data": "11/07",
-      "Hora": "13:00 - 16:00",
-      "Local": "Escola Deodoro de Mendonça"
+      "Data": "28/08",
+      "Hora": "18:00 - 20:00",
+      "Local": "Escola Clara Pinto"
     },
     {
-      "Data": "15/07",
-      "Hora": "19:00 - 21:00",
-      "Local": "Escola Deodoro de Mendonça"
-    },
-    {
-      "Data": "17/07",
-      "Hora": "19:00 - 21:00",
-      "Local": "Escola Deodoro de Mendonça"
-    },
-    {
-      "Data": "18/07",
-      "Hora": "13:00 - 16:00",
-      "Local": "Escola Deodoro de Mendonça"
-    },
-    {
-      "Data": "22/07",
-      "Hora": "19:00 - 21:00",
-      "Local": "Escola Deodoro de Mendonça"
-    },
-    {
-      "Data": "24/07",
-      "Hora": "19:00 - 21:00",
-      "Local": "Escola Deodoro de Mendonça"
-    },
-    {
-      "Data": "25/07",
-      "Hora": "13:00 - 16:00",
-      "Local": "Escola Deodoro de Mendonça"
-    },
-    {
-      "Data": "29/07",
-      "Hora": "19:00 - 21:00",
-      "Local": "Escola Deodoro de Mendonça"
-    },
-    {
-      "Data": "31/07",
-      "Hora": "19:00 - 21:00",
+      "Data": "29/08",
+      "Hora": "14:00 - 17:00",
       "Local": "Escola Deodoro de Mendonça"
     }
   ],
-  "avisos": ["Haverá apresentação no dia 12."]
+  "avisos": []
 }
