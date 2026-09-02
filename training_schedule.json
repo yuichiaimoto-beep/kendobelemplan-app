@@ -1,69 +1,69 @@
 {
   "schedule": [
     {
-      "Data": "01/08",
-      "Hora": "14:00 - 17:00",
-      "Local": "Escola Deodoro de Mendonça"
-    },
-    {
-      "Data": "05/08",
+      "Data": "02/09",
       "Hora": "19:30 - 21:30",
       "Local": "Escola Clara Pinto"
     },
     {
-      "Data": "07/08",
+      "Data": "04/09",
       "Hora": "18:00 - 20:00",
       "Local": "Escola Clara Pinto"
     },
     {
-      "Data": "08/08",
+      "Data": "05/09",
       "Hora": "14:00 - 17:00",
       "Local": "Escola Deodoro de Mendonça"
     },
     {
-      "Data": "12/08",
+      "Data": "09/09",
       "Hora": "19:30 - 21:30",
       "Local": "Escola Clara Pinto"
     },
     {
-      "Data": "14/08",
+      "Data": "11/09",
       "Hora": "18:00 - 20:00",
       "Local": "Escola Clara Pinto"
     },
     {
-      "Data": "15/08",
+      "Data": "12/09",
       "Hora": "14:00 - 17:00",
       "Local": "Escola Deodoro de Mendonça"
     },
     {
-      "Data": "19/08",
+      "Data": "16/09",
       "Hora": "19:30 - 21:30",
       "Local": "Escola Clara Pinto"
     },
     {
-      "Data": "21/08",
+      "Data": "18/09",
       "Hora": "18:00 - 20:00",
       "Local": "Escola Clara Pinto"
     },
     {
-      "Data": "22/08",
+      "Data": "19/09",
       "Hora": "14:00 - 17:00",
       "Local": "Escola Deodoro de Mendonça"
     },
     {
-      "Data": "26/08",
+      "Data": "23/09",
       "Hora": "19:30 - 21:30",
       "Local": "Escola Clara Pinto"
     },
     {
-      "Data": "28/08",
+      "Data": "25/09",
       "Hora": "18:00 - 20:00",
       "Local": "Escola Clara Pinto"
     },
     {
-      "Data": "29/08",
+      "Data": "26/09",
       "Hora": "14:00 - 17:00",
       "Local": "Escola Deodoro de Mendonça"
+    },
+    {
+      "Data": "30/09",
+      "Hora": "19:30 - 21:30",
+      "Local": "Escola Clara Pinto"
     }
   ],
   "avisos": []
