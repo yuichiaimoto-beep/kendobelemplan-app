@@ -1,77 +1,83 @@
 {
   "schedule": [
     {
-      "Data": "02/10",
-      "Hora": "18:00 - 20:00",
-      "Local": "Escola Clara Pinto"
-    },
-    {
-      "Data": "03/10",
-      "Hora": "14:00 - 17:00",
-      "Local": "Escola Deodoro de Mendonça"
-    },
-    {
-      "Data": "07/10",
+      "Data": "04/11",
       "Hora": "19:30 - 21:30",
       "Local": "Escola Clara Pinto"
     },
     {
-      "Data": "12/10",
-      "Hora": "14:00 - 16:30",
-      "Local": "Escola Clara Pinto"
-    },
-    {
-      "Data": "14/10",
-      "Hora": "19:30 - 21:30",
-      "Local": "Escola Clara Pinto"
-    },
-    {
-      "Data": "16/10",
+      "Data": "06/11",
       "Hora": "18:00 - 20:00",
       "Local": "Escola Clara Pinto"
     },
     {
-      "Data": "17/10",
+      "Data": "07/11",
       "Hora": "14:00 - 17:00",
-      "Local": "Escola Deodoro de Mendonça"
+      "Local": "Escola Benvinda de França Messias"
     },
     {
-      "Data": "21/10",
-      "Hora": "19:30 - 21:30",
-      "Local": "Escola Clara Pinto"
-    },
-    {
-      "Data": "23/10",
-      "Hora": "18:00 - 20:00",
-      "Local": "Escola Clara Pinto"
-    },
-    {
-      "Data": "24/10",
-      "Hora": "14:00 - 17:00",
-      "Local": "Escola Deodoro de Mendonça"
-    },
-    {
-      "Data": "26/10",
+      "Data": "09/11",
       "Hora": "18:30 - 20:00",
-      "Local": "Escola Benvinda de frança messias"
+      "Local": "Escola Benvinda de França Messias"
     },
     {
-      "Data": "28/10",
+      "Data": "11/11",
       "Hora": "19:30 - 21:30",
       "Local": "Escola Clara Pinto"
     },
     {
-      "Data": "30/10",
+      "Data": "13/11",
       "Hora": "18:00 - 20:00",
       "Local": "Escola Clara Pinto"
     },
     {
-      "Data": "31/10",
+      "Data": "14/11",
       "Hora": "14:00 - 17:00",
-      "Local": "Escola Deodoro de Mendonça"
+      "Local": "Escola Benvinda de França Messias"
+    },
+    {
+      "Data": "16/11",
+      "Hora": "18:30 - 20:00",
+      "Local": "Escola Benvinda de França Messias"
+    },
+    {
+      "Data": "18/11",
+      "Hora": "19:30 - 21:30",
+      "Local": "Escola Clara Pinto"
+    },
+    {
+      "Data": "21/11",
+      "Hora": "14:00 - 17:00",
+      "Local": "Escola Benvinda de França Messias"
+    },
+    {
+      "Data": "23/11",
+      "Hora": "18:30 - 20:00",
+      "Local": "Escola Benvinda de França Messias"
+    },
+    {
+      "Data": "25/11",
+      "Hora": "19:30 - 21:30",
+      "Local": "Escola Clara Pinto"
+    },
+    {
+      "Data": "27/11",
+      "Hora": "18:00 - 20:00",
+      "Local": "Escola Clara Pinto"
+    },
+    {
+      "Data": "28/11",
+      "Hora": "14:00 - 17:00",
+      "Local": "Escola Benvinda de França Messias"
+    },
+    {
+      "Data": "30/11",
+      "Hora": "18:30 - 20:00",
+      "Local": "Escola Benvinda de França Messias"
     }
   ],
   "avisos": [
-    "10/10: Não haverá treino."
+    "O grupo participará do Natsumatsuri realizado no KOSEI HOME no dia 29.",
+    "20/11: Dia Nacional de Zumbi e da Consciência Negra — Poderá haver treino intensivo."
   ]
 }
