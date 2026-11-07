@@ -11,16 +11,6 @@
       "Local": "Escola Clara Pinto"
     },
     {
-      "Data": "07/11",
-      "Hora": "14:00 - 17:00",
-      "Local": "Escola Benvinda de França Messias"
-    },
-    {
-      "Data": "09/11",
-      "Hora": "18:30 - 20:00",
-      "Local": "Escola Benvinda de França Messias"
-    },
-    {
       "Data": "11/11",
       "Hora": "19:30 - 21:30",
       "Local": "Escola Clara Pinto"
@@ -31,29 +21,9 @@
       "Local": "Escola Clara Pinto"
     },
     {
-      "Data": "14/11",
-      "Hora": "14:00 - 17:00",
-      "Local": "Escola Benvinda de França Messias"
-    },
-    {
-      "Data": "16/11",
-      "Hora": "18:30 - 20:00",
-      "Local": "Escola Benvinda de França Messias"
-    },
-    {
       "Data": "18/11",
       "Hora": "19:30 - 21:30",
       "Local": "Escola Clara Pinto"
-    },
-    {
-      "Data": "21/11",
-      "Hora": "14:00 - 17:00",
-      "Local": "Escola Benvinda de França Messias"
-    },
-    {
-      "Data": "23/11",
-      "Hora": "18:30 - 20:00",
-      "Local": "Escola Benvinda de França Messias"
     },
     {
       "Data": "25/11",
@@ -64,20 +34,10 @@
       "Data": "27/11",
       "Hora": "18:00 - 20:00",
       "Local": "Escola Clara Pinto"
-    },
-    {
-      "Data": "28/11",
-      "Hora": "14:00 - 17:00",
-      "Local": "Escola Benvinda de França Messias"
-    },
-    {
-      "Data": "30/11",
-      "Hora": "18:30 - 20:00",
-      "Local": "Escola Benvinda de França Messias"
     }
+    
   ],
   "avisos": [
-    "O grupo participará do Natsumatsuri realizado no KOSEI HOME no dia 29.",
-    "20/11: Dia Nacional de Zumbi e da Consciência Negra — Poderá haver treino intensivo."
+    "O grupo participará do Natsumatsuri realizado no KOSEI HOME no dia 29."
   ]
 }
